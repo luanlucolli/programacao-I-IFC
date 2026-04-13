@@ -1,5 +1,5 @@
-# 3 - Escreva um programa que deverá perguntar três números ao usuário. 
-# Imprima estes números em ordem crescente (do menor para o maior)
+'''3 - Escreva um programa que deverá perguntar três números ao usuário. 
+Imprima estes números em ordem crescente (do menor para o maior)'''
 
 n1 = int(input("numero 1: "))
 n2 = int(input("numero 2: "))

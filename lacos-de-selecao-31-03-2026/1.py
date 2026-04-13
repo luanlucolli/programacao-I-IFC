@@ -1,5 +1,5 @@
-# 1 - Faça um programa onde o usuário deverá digitar dois números. 
-# Verifique qual dos dois números é maior e imprima na tela informando qual é o maior.
+'''1 - Faça um programa onde o usuário deverá digitar dois números. 
+Verifique qual dos dois números é maior e imprima na tela informando qual é o maior.'''
 
 numero1 = int(input("numero 1: "))
 numero2 = int(input("numero 2: "))
