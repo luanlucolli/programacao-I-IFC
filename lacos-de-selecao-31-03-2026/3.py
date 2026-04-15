@@ -5,10 +5,6 @@ n1 = int(input("numero 1: "))
 n2 = int(input("numero 2: "))
 n3 = int(input("numero 3: "))
 
-maior = None
-meio = None
-menor = None
-
 if n1 > n2:
     if n1 > n3:
         maior = n1
