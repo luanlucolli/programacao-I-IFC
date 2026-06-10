@@ -12,7 +12,7 @@ P ou 5 - Par ou Ímpar
 X ou 6 - Operações Matemáticas'''
 def menu():
     
-    op = ''
+    op = ""
     
     while op != 0 and op != "S" and op != "s":
         
