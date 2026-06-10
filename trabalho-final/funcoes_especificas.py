@@ -1,18 +1,23 @@
 def retorna_dias(diaDaSemana):
     match diaDaSemana:
         case 1:
-            print("Domingo")
+            return "Domingo"
         case 2:
-            print("Segunda-Feira")
+            return "Segunda-Feira"
         case 3:
-            print("Terça-Feira")
+            return "Terça-Feira"
         case 4:
-            print("Quarta-Feira")
+            return "Quarta-Feira"
         case 5:
-            print("Quinta-Feira")
+            return "Quinta-Feira"
         case 6:
-            print("Sexta-Feira")
+            return "Sexta-Feira"
         case 7:
-            print("Sábado")
+            return "Sábado"
         case _:
-            print("Entrada inválida")
+            return "Entrada inválida"
+      
+'''            
+def numero_N(N):
+    if N <= 0:
+'''
