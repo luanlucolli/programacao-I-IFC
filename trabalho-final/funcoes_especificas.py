@@ -35,6 +35,10 @@ def numero_N(x):
     else:
         return "F3"
 
+
+def par_impar(x):
+    return x % 2 == 0
+
     """
      try:
         n1 = int(input("n1: "))
