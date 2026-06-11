@@ -16,10 +16,31 @@ def retorna_dias(diaDaSemana):
             return "Sábado"
         case _:
             return "Entrada inválida"
-      
+
+
 def expressoes_fn():
-    print("Raiz de 195 =", 195 ** (0.5)) 
-    print("2*5/20 + 30/15*2​ =", 2*5/20 + 30/15*2)
-    print("2*(5/20) + 35/(15*2) =", 2*(5/20) + 35/(15*2))
-    print("23 mod 4 =", 23%4)
-    
+    print("Raiz de 195 =", 195 ** (0.5))
+    print("2*5/20 + 30/15*2​ =", 2 * 5 / 20 + 30 / 15 * 2)
+    print("2*(5/20) + 35/(15*2) =", 2 * (5 / 20) + 35 / (15 * 2))
+    print("23 mod 4 =", 23 % 4)
+
+
+def numero_N(N):
+    if N <= 0:
+        return "F0"
+    elif N <= 10:
+        return "F1"
+    elif N <= 100:
+        return "F2"
+    else:
+        return "F3"
+
+    """
+     try:
+        n1 = int(input("n1: "))
+        n2 = int(input("n2: "))
+    except:
+        print("valores inválidos\n")
+    else:
+        print("subtração:",n1-n2)
+    """
