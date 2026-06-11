@@ -25,12 +25,12 @@ def expressoes_fn():
     print("23 mod 4 =", 23 % 4)
 
 
-def numero_N(N):
-    if N <= 0:
+def numero_N(x):
+    if x <= 0:
         return "F0"
-    elif N <= 10:
+    elif x <= 10:
         return "F1"
-    elif N <= 100:
+    elif x <= 100:
         return "F2"
     else:
         return "F3"

@@ -1,15 +1,6 @@
 import funcoes_gerais as fng
 import funcoes_especificas as fne
 
-'''2. (1 ponto) - Crie um menu que apresente as seguintes opções ao usuário:
-Escolha uma das opções:
-S ou 0 - Sair
-M ou 1 - Dias
-E ou 2 - Expressões Matemáticas
-F ou 3 - F0, F1, F2 ou F3
-A ou 4 - Somatório e Média
-P ou 5 - Par ou Ímpar
-X ou 6 - Operações Matemáticas'''
 def menu():
     
     op = ""
@@ -48,4 +39,5 @@ def main():
     fng.inicio_prog()
     menu()
     
-main()
+print(fng.somatorio(10))
+print(fng.media_somatorio(10))
