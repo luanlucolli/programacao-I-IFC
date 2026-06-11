@@ -23,6 +23,15 @@ def media_somatorio(x):
     for i in range(x + 1):
         soma += i
 
-    media = soma/x
+    media = soma / x
 
     return media
+
+
+def operacoes_mat(x, y):
+    soma = x + y
+    subtracao = x - y
+    multiplicacao = x * y
+    divisao = x / y
+
+    return soma, subtracao, multiplicacao, divisao

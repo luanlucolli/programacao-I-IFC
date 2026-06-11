@@ -1,12 +1,13 @@
 import funcoes_gerais as fng
 import funcoes_especificas as fne
 
+
 def menu():
-    
+
     op = ""
-    
+
     while op != 0 and op != "S" and op != "s":
-        
+
         print("Opções:")
         print("S ou 0 - Sair")
         print("M ou 1 - Dias")
@@ -17,27 +18,34 @@ def menu():
         print("X ou 6 - Operações Matemáticas")
 
         op = input("Escolha uma das opções: ")
-        
+
         match op:
-            case "S" | "s" | 0:
+            case "S" | "s" | "0":
                 fng.fim_prog()
-            case "M" | "m" | 1:
+            case "M" | "m" | "1":
                 print("dias")
-            case "E" | "e" | 2:
-                print("expressões matematicas")            
-            case "F" | "f" | 3:
+            case "E" | "e" | "2":
+                print("expressões matematicas")
+            case "F" | "f" | "3":
                 print("f0,f1,f2,f3")
-            case "A" | "a" | 4:
+            case "A" | "a" | "4":
                 print("somatorio ou media")
-            case "P" | "p" | 5:
-                print("par ou impar")   
-            case "X" | "x" | 6:
-                print("operacoes matematicas")   
-                
-# Função principal                 
+            case "P" | "p" | "5":
+                print("par ou impar")
+            case "X" | "x" | "6":
+                x = int(input("Primeiro número:"))
+                y = int(input("Segundo número: "))
+                soma, subtracao, multiplicacao, divisao = fng.operacoes_mat(x, y)
+                print("Soma:", soma)
+                print("Subtração:", subtracao)
+                print("Multiplicação:", multiplicacao)
+                print("Divisão:", divisao)
+
+
+# Função principal
 def main():
     fng.inicio_prog()
     menu()
-    
-print(fng.somatorio(10))
-print(fng.media_somatorio(10))
+
+
+main()
