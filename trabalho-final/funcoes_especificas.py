@@ -17,7 +17,9 @@ def retorna_dias(diaDaSemana):
         case _:
             return "Entrada inválida"
       
-'''            
-def numero_N(N):
-    if N <= 0:
-'''
+def expressoes_fn():
+    print("Raiz de 195 =", 195 ** (0.5)) 
+    print("2*5/20 + 30/15*2​ =", 2*5/20 + 30/15*2)
+    print("2*(5/20) + 35/(15*2) =", 2*(5/20) + 35/(15*2))
+    print("23 mod 4 =", 23%4)
+    
