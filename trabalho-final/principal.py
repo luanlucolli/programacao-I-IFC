@@ -1,5 +1,8 @@
 import funcoes_gerais as fng
 import funcoes_especificas as fne
+from funcoes_super_legais_do_trabalho_final import (
+    limpar_tela_desse_programa_super_legal,
+)
 
 
 def menu():
@@ -40,6 +43,7 @@ def menu():
                 print("Subtração:", subtracao)
                 print("Multiplicação:", multiplicacao)
                 print("Divisão:", divisao)
+        limpar_tela_desse_programa_super_legal()
 
 
 # Função principal
