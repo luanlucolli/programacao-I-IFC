@@ -44,9 +44,11 @@ def menu():
                 else:
                     print("Ímpar")
             case "X" | "x" | "6":
-                x = int(input("Primeiro número:"))
-                y = int(input("Segundo número: "))
-                soma, subtracao, multiplicacao, divisao, resto, ok= fng.operacoes_mat(x, y)
+                x = input("Primeiro número:")
+                y = input("Segundo número: ")
+                soma, subtracao, multiplicacao, divisao, resto, ok = fng.operacoes_mat(
+                    x, y
+                )
                 if ok:
                     print("Soma:", soma)
                     print("Subtração:", subtracao)
