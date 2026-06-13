@@ -29,9 +29,17 @@ def media_somatorio(x):
 
 
 def operacoes_mat(x, y):
-    soma = x + y
-    subtracao = x - y
-    multiplicacao = x * y
-    divisao = x / y
+    try:
+        x = int(x)
+        y = int(y)
 
-    return soma, subtracao, multiplicacao, divisao
+        soma = x + y
+        subtracao = x - y
+        multiplicacao = x * y
+        divisao = x / y
+        resto = x % y
+
+        return soma, subtracao, multiplicacao, divisao, resto, True
+
+    except:
+        return 0, 0, 0, 0, 0, False
