@@ -15,7 +15,7 @@ def retorna_dias(diaDaSemana):
         case 7:
             return "Sábado"
         case _:
-            return "Entrada inválida"
+            return "Entrada Inválida"
 
 
 def expressoes_fn():

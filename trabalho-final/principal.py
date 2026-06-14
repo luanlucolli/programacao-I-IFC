@@ -25,38 +25,67 @@ def menu():
         match op:
             case "S" | "s" | "0":
                 fng.fim_prog()
+
             case "M" | "m" | "1":
-                x = int(input("Informe um número de 1 a 7: "))
-                print(fne.retorna_dias(x))
+                try:
+                    x = int(input("Informe um número de 1 a 7: "))
+                except:
+                    print("Entrada Inválida")
+                else:
+                    print(fne.retorna_dias(x))
+
             case "E" | "e" | "2":
                 fne.expressoes_fn()
+
             case "F" | "f" | "3":
-                x = int(input("Informe um número: "))
-                print(fne.numero_N(x))
+                try:
+                    x = int(input("Informe um número: "))
+                except:
+                    print("Erro: Valores inválidos (letras)")
+                else:
+                    print(fne.numero_N(x))
+
             case "A" | "a" | "4":
-                x = int(input("Informe um número: "))
-                print(fng.somatorio(x))
-                print(fng.media_somatorio(x))
+                try:
+                    x = int(input("Informe um número: "))
+                except:
+                    print("Erro: Valores inválidos (letras)")
+                else:
+                    somatorio = fng.somatorio(x)
+                    media = fng.media_somatorio(x)
+
+                    print("Somatório:", somatorio)
+                    print("Média:", media)
+
             case "P" | "p" | "5":
-                x = int(input("Informe um número: "))
-                if fne.par_impar(x):
-                    print("Par")
+                try:
+                    x = int(input("Informe um número: "))
+                except:
+                    print("Erro: Valores inválidos (letras)")
                 else:
-                    print("Ímpar")
+                    if fne.par_impar(x):
+                        print("Par")
+                    else:
+                        print("Ímpar")
+
             case "X" | "x" | "6":
-                x = input("Primeiro número:")
-                y = input("Segundo número: ")
-                soma, subtracao, multiplicacao, divisao, resto, ok = fng.operacoes_mat(
-                    x, y
-                )
-                if ok:
-                    print("Soma:", soma)
-                    print("Subtração:", subtracao)
-                    print("Multiplicação:", multiplicacao)
-                    print("Divisão:", divisao)
-                    print("Resto:", resto)
+                try:
+                    x = int(input("Primeiro número: "))
+                    y = int(input("Segundo número: "))
+                except:
+                    print("Erro: Valores inválidos (letras)")
                 else:
-                    print("Valores inválidos ou operações inválida.")
+                    if y == 0:
+                        print("Erro: divisão por 0")
+                    else:
+                        soma, subtracao, multiplicacao, divisao, resto = (
+                            fng.operacoes_mat(x, y)
+                        )
+                        print("Soma:", soma)
+                        print("Subtração:", subtracao)
+                        print("Multiplicação:", multiplicacao)
+                        print("Divisão:", divisao)
+                        print("Resto:", resto)
         limpar()
 
 
