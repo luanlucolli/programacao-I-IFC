@@ -1,5 +1,5 @@
-def retorna_dias(diaDaSemana):
-    match diaDaSemana:
+def retorna_dias(x):
+    match x:
         case 1:
             return "Domingo"
         case 2:

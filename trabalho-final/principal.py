@@ -30,7 +30,7 @@ def menu():
                 try:
                     x = int(input("Informe um número de 1 a 7: "))
                 except:
-                    print("Entrada Inválida")
+                    print("Erro: Valores inválidos (letras)")
                 else:
                     print(fne.retorna_dias(x))
 

@@ -32,7 +32,7 @@ def operacoes_mat(x, y):
     soma = x + y
     subtracao = x - y
     multiplicacao = x * y
-    divisao = x // y
+    divisao = x / y
     resto = x % y
 
     return soma, subtracao, multiplicacao, divisao, resto
