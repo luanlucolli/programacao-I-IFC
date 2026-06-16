@@ -18,9 +18,10 @@ def menu():
         print("F ou 3 - F0, F1, F2 ou F3")
         print("A ou 4 - Somatório e Média")
         print("P ou 5 - Par ou Ìmpar")
-        print("X ou 6 - Operações Matemáticas")
+        print("X ou 6 - Operações Matemáticas\n")
 
         op = input("Escolha uma das opções: ")
+        print("")
 
         match op:
             case "S" | "s" | "0":
@@ -32,7 +33,7 @@ def menu():
                 except:
                     print("Erro: Valores inválidos (letras)")
                 else:
-                    print(fne.retorna_dias(x))
+                    print(fne.retorna_dia_semana(x))
 
             case "E" | "e" | "2":
                 fne.expressoes_fn()
@@ -86,6 +87,9 @@ def menu():
                         print("Multiplicação:", multiplicacao)
                         print("Divisão:", divisao)
                         print("Resto:", resto)
+            case _:
+                print("Opção inválida.")
+        print("")
         limpar()
 
 
