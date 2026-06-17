@@ -38,13 +38,3 @@ def numero_N(x):
 
 def par_impar(x):
     return x % 2 == 0
-
-    """
-     try:
-        n1 = int(input("n1: "))
-        n2 = int(input("n2: "))
-    except:
-        print("valores inválidos\n")
-    else:
-        print("subtração:",n1-n2)
-    """
