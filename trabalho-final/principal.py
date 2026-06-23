@@ -29,14 +29,36 @@ def menu():
         print("P ou 5 - Par ou Ìmpar")
         print("X ou 6 - Operações Matemáticas\n")
 
+        # Lê a opção desejada
         op = input("Escolha uma das opções: ")
         print("")
+
+        """if op == "s" or op == "S" or op == "0":
+            fng.fim_prog()
+            break
+        elif op == "M" or op == "m" or op == "1":
+            try:
+                # Lê o número que representa o dia da semana.
+        Lê        numero_dia = int(input("Informe um número de 1 a 7: "))
+            except:
+                # Informa erro caso o valor digitado não seja numérico.
+                print("Erro: Valores inválidos (letras)")
+            else:
+                # Guarda e mostra o dia correspondente ao número informado.
+                dia_semana = fne.retorna_dia_semana(numero_dia)
+                print(dia_semana)
+        else:
+            print("Opção inválida.")
+            
+                
+        limpar()"""
 
         # Verifica qual opção foi escolhida.
         match op:
             case "S" | "s" | "0":
                 # Encerra o programa com a mensagem de despedida.
                 fng.fim_prog()
+                break
 
             case "M" | "m" | "1":
                 try:
