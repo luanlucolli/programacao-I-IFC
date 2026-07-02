@@ -96,14 +96,17 @@ def menu():
                     # Informa erro caso o valor digitado não seja numérico.
                     print("Erro: Valores inválidos (letras)")
                 else:
-                    # Calcula o somatório dos números até o valor informado.
-                    somatorio = fng.somatorio(numero)
-                    # Calcula a média do somatório até o valor informado.
-                    media = fng.media_somatorio(numero)
+                    if numero > 0:
+                        # Calcula o somatório dos números até o valor informado.
+                        somatorio = fng.somatorio(numero)
+                        # Calcula a média do somatório até o valor informado.
+                        media = fng.media_somatorio(numero)
 
-                    # Mostra os resultados calculados.
-                    print("Somatório:", somatorio)
-                    print("Média:", media)
+                        # Mostra os resultados calculados.
+                        print("Somatório:", somatorio)
+                        print("Média:", media)
+                    else: 
+                        print("Erro: Valores inválidos (número menor que 0)")
 
             case "P" | "p" | "5":
                 try:
@@ -133,9 +136,7 @@ def menu():
                     print("Erro: Valores inválidos (letras)")
                 else:
                     # Evita a divisão por zero antes de chamar a função.
-                    if segundo_numero == 0:
-                        print("Erro: divisão por 0")
-                    else:
+                    if segundo_numero != 0:
                         # Recebe os resultados das operações matemáticas.
                         soma, subtracao, multiplicacao, divisao, resto = (
                             fng.operacoes_mat(primeiro_numero, segundo_numero)
@@ -146,6 +147,9 @@ def menu():
                         print("Multiplicação:", multiplicacao)
                         print("Divisão:", divisao)
                         print("Resto:", resto)
+                    else:
+                        print("Erro: divisão por 0")
+
             case _:
                 # Informa quando a opção digitada não existe no menu.
                 print("Opção inválida.")
