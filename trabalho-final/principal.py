@@ -106,7 +106,7 @@ def menu():
                         print("Somatório:", somatorio)
                         print("Média:", media)
                     else: 
-                        print("Erro: Valores inválidos (número menor que 0)")
+                        print("Erro: Valores inválidos (número menor ou igual a 0)")
 
             case "P" | "p" | "5":
                 try:
