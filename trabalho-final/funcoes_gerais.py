@@ -53,8 +53,8 @@ def operacoes_mat(x, y):
     subtracao = x - y
     # Calcula a multiplicação dos dois valores.
     multiplicacao = x * y
-    # Calcula a divisão dos dois valores.
-    divisao = x / y
+    # Calcula a divisão inteira dos dois valores.
+    divisao = x // y
     # Calcula o resto da divisão.
     resto = x % y
 
