@@ -2,9 +2,9 @@
 
 x = [1, 2, 3]
 
-z = x
+z = x[:]
 
-y = x
+y = x[:]
 
 print(x, z, y)
 
